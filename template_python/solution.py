@@ -1,8 +1,26 @@
-import sys
 
-print('Length of input array:', len(sys.argv))
-print('Input is: ', sys.argv)
+def solution1(input_text) :
+    count = 0
 
-f = open(sys.argv[1], "r")
-for x in f:
-    print(x)
+    return count
+
+def solution2(input_text) :
+    count = 0
+
+    return count
+
+with open("input.txt") as f:
+    input_text = f.readlines()
+print (solution1(input_text))
+
+with open("test.txt") as f:
+    input_text = f.readlines()
+print (solution1(input_text))
+
+with open("input.txt") as f:
+    input_text = f.readlines()
+print (solution2(input_text))
+
+with open("test.txt") as f:
+    input_text = f.readlines()
+print (solution2(input_text))
