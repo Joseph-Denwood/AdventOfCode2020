@@ -1,0 +1,20 @@
+import sys
+
+print('Length of input array:', len(sys.argv))
+print('Input is: ', sys.argv)
+
+f = open(sys.argv[1], "r")
+dict = {}
+dict2 = {}
+for x_s in f:
+    x = int(x_s)
+
+    if(dict2.get(x)) :
+        print (x * dict2.get(x)[0] * dict2.get(x)[1])
+    else :
+        for y in dict.keys() :
+            print(y)
+            test = 2020 - y - x
+            dict2.update({test : [x, y]})
+
+    dict.update({x : x})

@@ -1,0 +1,12 @@
+import sys
+
+print('Length of input array:', len(sys.argv))
+print('Input is: ', sys.argv)
+
+f = open(sys.argv[1], "r")
+arr = [0] * 2021
+for x in f:
+    if (arr[x] != 0) :
+        print (x * (2020 - x))
+    else :
+        arr[2020 - x] = 1;
